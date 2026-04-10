@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="19dp"
+    app:cardElevation="800dp"
+    app:strokeColor="#F0F6C9"
+    app:strokeWidth="3dp"
+    tools:context=".HydrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hydration"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="@drawable/shape"
+            android:textColor="#10451C" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hydration"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Stay Refreshed: Your Hydration Companion\n
+Water is the fuel that keeps your body and mind running at peak performance. Since 60% of the human body is water, staying hydrated is one of the simplest yet most effective ways to boost your energy, clarity, and overall health.\n\n
+
+💧 Why Hydration Matters\n
+Every system in your body depends on water. Proper hydration helps you:\n
+Boost Brain Power: Even mild dehydration can lead to fatigue and brain fog.\n
+Fuel Your Work: Keep your joints lubricated and your muscles energized during long tasks.\n
+Clearer Skin: Help your body flush out toxins for a natural, healthy glow.\n
+Temperature Control: Keep your internal cooling system working perfectly, especially on warm days.\n\n
+
+⏰ Smart Reminders\n
+Life gets busy, and it's easy to forget to take a sip. Our Hydration Alerts are designed to nudge you toward your daily goal without being a distraction.
+Gentle Nudges: Receive subtle notifications throughout the day.\n
+Custom Goals: We’ll calculate your ideal intake based on your activity level and environment.
+Progress Tracking: Watch your daily water ring close as you log every glass.\n\n
+
+Tips for Meeting Your Goal\n
+Keep it Visible: Always have a reusable bottle within arm's reach of your workstation.\n
+Flavor it Up: If plain water feels boring, try adding a slice of lemon, cucumber, or a few mint leaves.\n
+Drink with Meals: Make it a habit to finish a full glass of water with every meal or snack.\n
+Listen to Your Body: If you feel a headache or a slump in energy, it’s usually time for a refill.\n\n
+
+Quick Tip: By the time you feel thirsty, your body is already slightly dehydrated. Aim to sip consistently rather than chugging all at once!\n\n
+[Set Your Daily Goal] [Log a Glass +250ml]
+"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

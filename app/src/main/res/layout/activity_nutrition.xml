@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NutritionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nutritional Advice"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="@drawable/shape"
+            android:padding="10dp"
+            android:textColor="#456"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="238dp"
+            android:src="@drawable/image5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🥗 The Foundations of a Balanced Plate\n\n
+
+A healthy diet focuses on nutrient density. Aim to fill your plate with a variety of colors and textures to ensure you're getting a full spectrum of vitamins and minerals.\n\n
+Proteins: The building blocks for muscle and tissue repair. (e.g., Lean poultry, beans, tofu, and fish).\n\n
+Complex Carbohydrates: Your body's primary energy source. (e.g., Quinoa, sweet potatoes, and oats).\n\n
+Healthy Fats: Essential for brain health and hormone production. (e.g., Avocado, nuts, and olive oil).\n\n
+Fiber: Key for digestion and sustained fullness. (e.g., Leafy greens, berries, and seeds).\n\n
+
+💧 Hydration is Key\n\n
+
+Did you know that even mild dehydration can lead to brain fog and fatigue? Water is involved in every single chemical reaction in your body.\n
+
+    Pro Tip: Try to drink at least half your body weight in ounces of water daily. If you’re active or live in a warm climate, aim for more!\n\n
+
+📉 Understanding Your Macros\n
+
+While every body is different, a standard starting point for daily intake often looks like this:\n\n
+Nutrient	Role	Ideal Source\n
+Carbs	Energy	Whole Grains\n
+Proteins	Repair	Legumes / Lean Meats\n
+Fats	Protection	Omega-3s / Seeds\n\n
+🍎 Smart Swaps for Success\n\n
+
+Small changes lead to big results. Try these simple alternatives to level up your nutrition today:\n\n
+
+    Swap White Rice for Cauliflower Rice or Brown Rice.\n
+
+    Swap Soda for Sparkling Water with Lemon.\n
+
+    Swap Sour Cream for Greek Yogurt.\n
+
+    Swap Milk Chocolate for 70%+ Dark Chocolate.\n\n
+
+
+Ready to track your first meal? Scroll down to get started!"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rewardAd"
+            android:text="Get reward"
+            android:textSize="22sp"
+            android:backgroundTint="#03A9F4"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

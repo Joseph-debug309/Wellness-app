@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExerciseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="@drawable/shape"
+            android:textColor="#456"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/exercise"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fuel Your Ambition: Time to Move\n
+Starting a new fitness routine is about more than just physical change—it’s about building a stronger, more resilient version of yourself. Whether you’re looking to boost your energy or clear your mind after a long day of work, today is the perfect day to take that first step.\n\n
+
+🚀 Why Start Today?\n
+Exercise is the ultimate life hack. By getting active, you’re investing in:\n
+Mental Clarity: Clear the cache of your mind and improve your problem-solving skills.\n
+Sustained Energy: Counteract the fatigue of long hours spent at a desk or on screen.\n
+Physical Strength: Build the foundation to tackle daily tasks with ease and confidence.\n
+Better Mood: Release endorphins—your body’s natural feel-good chemicals.\n\n
+
+🛠 Your Personalized Launchpad\n
+Not sure where to begin? We’ve broken it down into manageable paths so you can start where you feel most comfortable:\n
+Workout Type	Focus	Experience Level\n
+Foundation Strength	Building core stability and functional muscle.\n\n	Beginner
+HIIT Circuits	High-energy bursts to maximize time and burn.\n\n	Intermediate
+Mobility and Flow	Improving flexibility and posture.	\n\nAll Levels
+Power Walk/Run	Cardiovascular health and endurance.	\n\nAll Levels
+Export to Sheets\n\n
+
+💡 Pro-Tips for Consistency\n
+The 5-Minute Rule: If you’re feeling unmotivated, commit to just 5 minutes. Usually, once you start, the momentum will carry you through.\n
+Dress the Part: Lay out your gear the night before. Reducing small barriers makes it easier to say yes to your workout.\n
+Track Your Wins: It’s not just about the scale. Celebrate your first mile, your first set of push-ups, or simply showing up three days in a row.\n
+Listen to Your Hardware: Respect your body's limits. Rest and recovery are just as important as the workout itself.\n
+
+Did you know? Regular physical activity has been shown to improve cognitive function and memory—essential for staying sharp during complex projects.\n
+[Explore Workout Library] [Start 10-Minute Warm-Up]\n
+Ignite Your Drive: Daily Inspiration\n
+Motivation is the spark that turns an idea into reality. It’s the mental fuel that keeps you coding, creating, and building even when the sync gets tough. Whether you're working on a personal project or pushing through a long study session, a small shift in mindset can change your entire day.\n\n
+
+🌟 Today's Focus: Momentum over Perfection\n
+Don't wait for the perfect conditions to begin. Success isn't found in a single giant leap, but in the small, consistent actions you take every day.\n
+Small Wins Matter: Every line of code written or task completed is a step forward.\n
+Embrace the Challenge: Difficulty is just a sign that you are upgrading your skills.\n
+Stay Curious: Treat every setback as a bug to be debugged, not a reason to stop.\n\n
+
+⚡ Quick Shifts for an Instant Boost\n
+If you're feeling stuck, try one of these 90-second resets:\n
+The Power Posture: Stand up, stretch your arms wide, and take three deep breaths.\n
+Review Your 'Why': Think about the project you’re building and the impact it will have when it's finished.\n
+Music Mode: Put on a high-energy track that makes you feel unstoppable.\n\n
+
+🛠 Habits of High Achievers\n
+Habit	Benefit\n
+Eat the Frog	Do your hardest, most important task first thing in the morning.\n
+Deep Work	Set a timer for 25 minutes of zero-distraction focus (Pomodoro).\n
+Visual Progress	Check off your tasks visually to trigger a dopamine hit.\n
+Export to Sheets\n\n
+
+📖 Quote of the Day\n
+'The best way to predict the future is to create it.' — Peter Drucker\n
+
+Reflection: What is one small thing you can finish in the next 30 minutes that will make you feel proud of your progress today?\n
+[Get a New Quote] [View My Goals]\n\n
+"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

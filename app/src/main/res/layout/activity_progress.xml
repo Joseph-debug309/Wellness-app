@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progress"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:background="@drawable/shape"
+            android:textStyle="bold"
+            android:textColor="#456"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/progress"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Honest reflection is the bridge between where you are and where you want to be.\n
+
+Take a moment to step back from the grind and look at the data. Progress isn’t always a straight line upward; sometimes it’s the resilience to keep going when the numbers stay flat. Whether you have leapt forward or are just holding your ground, every day you show up is a building block.
+
+The Reality Check\n
+Look at your targets for the week. Are you moving toward them, or have you been distracted by urgent tasks that aren't actually important? It is easy to confuse movement with progress. Ensure your energy is being spent on the things that actually move the needle.\n
+
+Measure the Effort, Not Just the Result\n
+You cannot always control the outcome, but you can always control your input. If you haven't reached the milestone yet, ask yourself: Did I put in the work? If the answer is yes, then trust the process. The results are lagging indicators of your current habits.\n
+
+Adjust the Sails\n
+If you find yourself off course, do not waste energy on guilt. Guilt is a weight, not a fuel. Use this check-in to recalibrate. If a goal was too ambitious, break it down further. If you’ve been coasting, ramp up the intensity. A pilot is constantly making small course corrections to reach their destination; you should do the same.\n
+
+The Win Column\n
+List three things that went well since your last check-in. Acknowledge your discipline, your focus, or your ability to handle a setback. Celebrating small wins provides the dopamine hit needed to tackle the next big challenge.\n
+
+Summary of Standing\n
+Where do I stand right now?\n
+What is the biggest obstacle currently in my way?\n
+What is my very next move to overcome it?\n
+
+You are closer than you were yesterday. Keep pushing"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

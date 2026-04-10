@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeeklyGoalsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weekly Goals"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:background="@drawable/shape"
+            android:textStyle="bold"
+            android:textColor="#456"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weeklygoals"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weekly Momentum
+
+A goal without a plan is just a wish.\n
+
+The week ahead is a container of 168 hours. How you fill them determines the direction of your life. This is your opportunity to move from being busy to being productive. Success is not about doing everything; it is about doing the right things consistently.\n
+
+Review and Reflect
+Look back at last week. What worked? What held you back? Use those lessons to sharpen your focus for the next seven days. Growth comes from honest evaluation.\n
+
+Set Your Non-Negotiables
+Identify the three most important objectives for this week. These are your big rocks. If you accomplish these, the week is a victory, regardless of what else happens. Write them down and commit to them.\n
+
+The Strategy of Small Steps
+Break your weekly goals into daily actions. A massive project is just a collection of small tasks handled one by one. Win the morning to win the day, and win the days to win the week.\n
+
+Stay Resilient
+Mid-week slumps are natural. When momentum dips, rely on your discipline rather than your feelings. Perfection is not the requirement—persistence is. If you get off track, don't wait for next Monday to start again. Reset immediately.\n
+
+Looking Forward
+Imagine it is Sunday evening. You are looking back at a week of focused effort and meaningful progress. How does that version of you feel? Start working now to make that feeling a reality.\n
+
+The work starts today. Let's make it count.\n"
+        android:textSize="16sp"
+        android:padding="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

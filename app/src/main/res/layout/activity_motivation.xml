@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MotivationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motivation"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:background="@drawable/shape"
+            android:textStyle="bold"
+            android:textColor="#456"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/daily"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rise and Shine\n\n
+
+The secret to getting ahead is getting started.\n
+
+Today is a clean slate. Whatever challenges you faced yesterday stayed in the past. Your only mission for the next twenty-four hours is to be slightly better than you were when you woke up.\n
+
+Focus on the Process
+Results are just the shadow cast by your habits. Don't obsess over the finish line; obsess over the next step. If you are building something, write the next line. If you are training, take the next step.\n
+
+The Power of Consistency
+Big breakthroughs are usually just the result of showing up on the days when you didn't feel like it. Discipline will carry you when motivation fades.\n
+
+Today's Mindset
+I am capable, I am focused, and I am in control of my effort. I will focus on what I can influence and let go of what I cannot.\n
+
+One Small Win
+Identify one task that has been weighing on your mind. Do it first. Clear the path.\n
+
+Keep going. The world needs what you are working on.\n"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

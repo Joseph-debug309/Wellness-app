@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
         //Requests interstitial ads
         InterstitialAd.load(
             this,
-            "ca-app-pub-3940256099942544/1033173712", // Test ID
+            "ca-app-pub-8714517234726413/2875455284", // Test ID
             adRequest,
             object : InterstitialAdLoadCallback() {
 

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Animated Vector Drawable for the Splash Screen.
+    Applies a heartbeat (scaling) effect to the heart icon.
+-->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="200dp"
+            android:height="200dp"
+            android:viewportWidth="200"
+            android:viewportHeight="200">
+
+            <!-- Background circle -->
+            <path
+                android:name="circle"
+                android:fillColor="#0f172a"
+                android:pathData="M100,10 A90,90 0 1,1 99.9,10" />
+
+            <!--
+                Group wrapper for the heart path.
+                Required because scale properties are supported on 'group',
+                but not directly on 'path' (FullPath).
+            -->
+            <group
+                android:name="heart_group"
+                android:pivotX="100"
+                android:pivotY="100">
+                <path
+                    android:name="heart"
+                    android:fillColor="#E03C3C"
+                    android:pathData="M100,140 L60,100 A25,25 0 1,1 100,70 A25,25 0 1,1 140,100 Z" />
+            </group>
+        </vector>
+    </aapt:attr>
+
+    <!-- Animation for scaling (heartbeat effect) applied to the group -->
+    <target android:name="heart_group">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:duration="800"
+                    android:propertyName="scaleX"
+                    android:repeatCount="infinite"
+                    android:repeatMode="reverse"
+                    android:valueFrom="1"
+                    android:valueTo="1.3" />
+                <objectAnimator
+                    android:duration="800"
+                    android:propertyName="scaleY"
+                    android:repeatCount="infinite"
+                    android:repeatMode="reverse"
+                    android:valueFrom="1"
+                    android:valueTo="1.3" />
+            </set>
+        </aapt:attr>
+    </target>
+
+</animated-vector>

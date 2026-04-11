@@ -74,7 +74,7 @@ Ready to track your first meal? Scroll down to get started!"
             android:layout_height="wrap_content"
             android:id="@+id/rewardAd"
             android:text="Get reward"
-            android:textSize="22sp"
+            android:textSize="32sp"
             android:backgroundTint="#03A9F4"/>
 
 

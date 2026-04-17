@@ -4,157 +4,242 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#00BCD4"
+    android:background="#65A8B3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".MainActivity">
 
-<!--    Below is a linear layout that holds all other views-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
         android:orientation="vertical">
 
-
-<!--        Below is a textview -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/aclonica"
             android:text="Health and Wellness app"
             android:textAlignment="center"
-            android:textColor="#FD6D28"
-            android:textSize="45sp"
+            android:textColor="#90431A"
+            android:textSize="36sp"
             android:textStyle="bold" />
 
-<!--       Below is the image -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/image1"
-            android:layout_marginTop="15dp"/>
 
         <com.google.android.gms.ads.AdView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/adView"
+            android:layout_marginTop="12dp"
             app:adSize="BANNER"
             app:adUnitId="ca-app-pub-8714517234726413/9711095442"/>
 
-
-<!--        Below is button 1-->
-        <Button
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/health_recipes"
-            android:text="Healty Recipes"
-            android:textSize="20sp"
-            android:textColor="#ebfff0"
-            android:drawableLeft="@drawable/recipe"
-            android:backgroundTint="#357"
-            android:layout_marginTop="15dp"/>
+            android:columnCount="2"
+            android:layout_marginTop="8dp"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
 
-<!--        Below is button number 2-->
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/nutrition_advice"
-            android:drawableLeft="@drawable/nutritionplan"
-            android:text="Nutrition Advice"
-            android:textSize="20sp"
-            android:textColor="#ebfff0"
-            android:backgroundTint="#357"
-            android:layout_marginTop="15dp"/>
-
-<!--        Below is button 3-->
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/meditation"
-            android:drawableLeft="@drawable/meditation"
-            android:text="Meditation"
-            android:textSize="20sp"
-            android:textColor="#ebfff0"
-            android:backgroundTint="#357"
-            android:layout_marginTop="15dp"/>
-
-        <!--        Below is button 4-->
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/hydration_alert"
-            android:drawableLeft="@drawable/water"
-            android:text="Hydration Alert"
-            android:textSize="20sp"
-            android:textColor="#ebfff0"
-            android:backgroundTint="#357"
-            android:layout_marginTop="15dp"/>
-
-        <!--        Below is button 5-->
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/start_exercise"
-            android:drawableLeft="@drawable/power"
-            android:text="Start Exercise"
-            android:textSize="20sp"
-            android:textColor="#ebfff0"
-            android:backgroundTint="#357"
-            android:layout_marginTop="15dp"/>
-
-        <!--        Below is button 6-->
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/daily_motivation"
-            android:drawableLeft="@drawable/recipe"
-            android:text="Daily Motivation"
-            android:textSize="20sp"
-            android:textColor="#ebfff0"
-            android:backgroundTint="#357"
-            android:layout_marginTop="15dp"/>
-
-        <!--        Below is button 7-->
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/weekly_goals"
-            android:drawableLeft="@drawable/goal"
-            android:text="Weekly Goals"
-            android:textSize="20sp"
-            android:textColor="#ebfff0"
-            android:backgroundTint="#357"
-            android:layout_marginTop="15dp"/>
-
-            <!--        Below is button 7-->
-            <Button
-                android:layout_width="match_parent"
+            <!-- Card 1 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/check_progress"
-                android:drawableLeft="@drawable/prooo"
-                android:text="Check_progress"
-                android:textSize="20sp"
-                android:textColor="#ebfff0"
-                android:backgroundTint="#357"
-                android:layout_marginTop="15dp"/>
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="9dp"
+                app:cardElevation="4dp">
 
-<!--        This is button 9-->
+                <Button
+                    android:id="@+id/health_recipes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="100dp"
+                    android:backgroundTint="#357"
+                    android:drawableTop="@drawable/recipe"
+                    android:text="Healty Recipes"
+                    android:textColor="#ebfff0"
+                    android:textSize="14sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 2 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <Button
+                    android:id="@+id/nutrition_advice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/nutritionplan"
+                    android:text="Nutrition Advice"
+                    android:textSize="14sp"
+                    android:textColor="#ebfff0"
+                    android:backgroundTint="#357"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="15dp"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 3 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <Button
+                    android:id="@+id/meditation"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#357"
+                    android:drawableTop="@drawable/meditation"
+                    android:padding="8dp"
+                    android:text="Meditation"
+                    android:textColor="#ebfff0"
+                    android:textSize="14sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 4 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <Button
+                    android:id="@+id/hydration_alert"
+                    android:layout_width="149dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#357"
+                    android:drawableTop="@drawable/water"
+                    android:padding="8dp"
+                    android:text="Hydration Alert"
+                    android:textColor="#ebfff0"
+                    android:textSize="14sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 5 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <Button
+                    android:id="@+id/start_exercise"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#357"
+                    android:drawableTop="@drawable/power"
+                    android:padding="8dp"
+                    android:text="Start Exercise"
+                    android:textColor="#ebfff0"
+                    android:textSize="14sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 6 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <Button
+                    android:id="@+id/daily_motivation"
+                    android:layout_width="143dp"
+                    android:layout_height="85dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#357"
+                    android:drawableTop="@drawable/recipe"
+                    android:padding="8dp"
+                    android:text="Daily Motivation"
+                    android:textColor="#ebfff0"
+                    android:textSize="14sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 7 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <Button
+                    android:id="@+id/weekly_goals"
+                    android:layout_width="127dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#357"
+                    android:drawableTop="@drawable/goal"
+                    android:padding="8dp"
+                    android:text="Weekly Goals"
+                    android:textColor="#ebfff0"
+                    android:textSize="14sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 8 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <Button
+                    android:id="@+id/check_progress"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#357"
+                    android:drawableTop="@drawable/prooo"
+                    android:padding="8dp"
+                    android:text="Check_progress"
+                    android:textColor="#ebfff0"
+                    android:textSize="14sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </GridLayout>
+
         <Button
+            android:id="@+id/learnmore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/learnmore"
-            android:drawableLeft="@drawable/button"
+            android:drawableTop="@drawable/button"
             android:text="Learn More..."
-            android:textSize="20sp"
+            android:textSize="14sp"
             android:textColor="#ebfff0"
             android:backgroundTint="#357"
-            android:layout_marginTop="15dp"/>
-
+            android:padding="8dp"/>
 
 
     </LinearLayout>
-
-
 
 </ScrollView>

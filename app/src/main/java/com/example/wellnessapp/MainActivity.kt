@@ -1,11 +1,15 @@
 package com.example.wellnessapp
 
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.animation.doOnEnd
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.gms.ads.AdRequest
@@ -19,15 +23,29 @@ class MainActivity : AppCompatActivity() {
 
     private var mInterstitialAd: InterstitialAd? = null
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Handle the splash screen transition
+        val splashScreen = installSplashScreen()
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        splashScreen.setOnExitAnimationListener { splashScreenView ->
+            val slideUp = ObjectAnimator.ofFloat(
+                splashScreenView.view,
+                View.ALPHA,
+                1f,
+                0f
+            )
+            slideUp.duration = 500L
+            slideUp.doOnEnd { splashScreenView.remove() }
+            slideUp.start()
         }
 
 //        Find buttons by use of their id's
